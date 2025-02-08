@@ -1,0 +1,105 @@
+/* Estilos para el cuerpo de la página */
+body {
+  margin: 0; /* Elimina el margen predeterminado */
+  padding: 0; /* Elimina el padding predeterminado */
+  font-family: Arial, sans-serif; /* Fuente predeterminada */
+  display: flex; /* Usa Flexbox para centrar el contenido */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 100vh; /* Altura completa de la ventana */
+  overflow: hidden; /* Evita el desplazamiento */
+  background-image: url('imagenes/porta1,.jpg'); /* Ruta de la imagen de fondo */
+  background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+* Estilos para el contenido */
+.content {
+  text-align: center; /* Centra el texto */
+  background: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para el contenido */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra para el contenido */
+}
+
+/* Estilos para el título */
+h1 {
+  color: #130000e0; /* Color del texto */
+  margin: 0; /* Elimina el margen predeterminado */
+}
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(61, 94, 243, 0.5);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1rem;
+  color: #ddd;
+  max-width: 400px;
+  margin: 0 auto 30px;
+}
+
+#whatsapp-btn {
+  background: #25d366;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+#whatsapp-btn:hover {
+  background: #128c7e;
+  transform: scale(1.1);
+}
+/* Media Queries para diseño responsivo */
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem; /* Tamaño de fuente más pequeño para móviles */
+  }
+
+  p {
+    font-size: 0.9rem; /* Tamaño de fuente más pequeño para móviles */
+  }
+
+  .content {
+    padding: 15px; /* Menos padding en móviles */
+  }
+}
+
+/* Para pantallas medianas (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  h1 {
+    font-size: 1.8rem; /* Tamaño de fuente intermedio para tablets */
+  }
+
+  p {
+    font-size: 1rem; /* Tamaño de fuente intermedio para tablets */
+  }
+}
+
+/* Para pantallas grandes (escritorios) */
+@media (min-width: 1025px) {
+  h1 {
+    font-size: 2.5rem; /* Tamaño de fuente más grande para escritorios */
+  }
+
+  p {
+    font-size: 1.2rem; /* Tamaño de fuente más grande para escritorios */
+  }
+}
